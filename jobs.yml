@@ -8,4 +8,4 @@ jobs:
     type: gkeDeploy
     steps:
       - GET fetch-image-job
-      - GET dcl-cluster-1
+      - GET gke-cluster
