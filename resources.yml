@@ -6,4 +6,3 @@ resources:
       name: "yeasy/simple-web"
       isPull: false
       tag: latest
- 
