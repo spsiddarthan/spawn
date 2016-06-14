@@ -11,7 +11,7 @@ resources:
     type: image
     integration: docker-int 
     source:
-      name: "nginx"
+      name: "siddarthan/centos-node-hello"
       isPull: false
       tag: latest      
 
