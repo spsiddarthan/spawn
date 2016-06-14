@@ -3,10 +3,9 @@ jobs:
     type: manifest
     steps:
       - GET dockimage-1
-      - GET dockimage-2
 
   - name: fetch-cluster-job
-    type: dclDeploy
+    type: gkeDeploy
     steps:
       - GET fetch-image-job
       - GET dcl-cluster-1
