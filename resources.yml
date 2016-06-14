@@ -6,19 +6,11 @@ resources:
       name: "yeasy/simple-web"
       isPull: false
       tag: latest
-      
-  - name: dockimage-2
-    type: image
-    integration: docker-int 
-    source:
-      name: "siddarthan/centos-node-hello"
-      isPull: false
-      tag: latest      
 
-  - name: dcl-cluster-1
-    type: dclCluster
-    integration: sid-dcl
+  - name: gke-cluster
+    type: gkeCluster
+    integration: gke
     source:
-     name : "docker-cloud-node"
+     name : "sid-cluster"
 
  
