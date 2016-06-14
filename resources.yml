@@ -1,16 +1,9 @@
 resources:
-  - name: myimage-1
+  - name: myimage-2
     type: image
     integration: docker-int 
     source:
       name: "yeasy/simple-web"
       isPull: false
       tag: latest
-
-  - name: mycluster-1
-    type: gkeCluster
-    integration: gke
-    source:
-      name: "sid-cluster"
-
  
