@@ -11,7 +11,7 @@ resources:
     type: gkeCluster
     integration: gke
     source:
-      name: "sid-cluster",
+      name: "sid-cluster"
       region: "us-east1-b"
 
  
