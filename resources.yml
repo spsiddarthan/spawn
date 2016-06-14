@@ -11,6 +11,6 @@ resources:
     type: gkeCluster
     integration: gke
     source:
-      name : "sid-cluster"
+      name: "sid-cluster"
 
  
