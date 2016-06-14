@@ -1,5 +1,5 @@
 resources:
-  - name: dockimage-1
+  - name: dockimage-11
     type: image
     integration: docker-int 
     source:
@@ -7,10 +7,11 @@ resources:
       isPull: false
       tag: latest
 
-  - name: gke-cluster
+  - name: gke-cluster-11
     type: gkeCluster
     integration: gke
     source:
-      name : "sid-cluster"
+      name: "sid-cluster",
+      region: "us-east1-b"
 
  
