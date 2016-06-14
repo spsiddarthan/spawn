@@ -3,5 +3,3 @@ jobs:
     type: manifest
     steps:
       - GET: myimage-2
-
-  
