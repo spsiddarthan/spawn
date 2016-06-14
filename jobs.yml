@@ -1,11 +1,11 @@
 jobs:
-  - name: fetch-image-job
+  - name: fetch-image-job-1
     type: manifest
     steps:
-      - GET dockimage-1
+      - GET myimage-1
 
-  - name: fetch-cluster-job
+  - name: fetch-cluster-job-1
     type: gkeDeploy
     steps:
-      - GET fetch-image-job
-      - GET gke-cluster
+      - GET fetch-image-job-1
+      - GET mycluster-1
