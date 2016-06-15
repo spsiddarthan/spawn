@@ -21,5 +21,10 @@ resources:
     source:
       name: "sid-cluster"
       region: "us-east1-b"
+      
+  - name: myReplicas
+    type: replicas
+    source:
+      count: 2    
 
  
