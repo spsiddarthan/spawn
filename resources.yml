@@ -19,7 +19,7 @@ resources:
     type: gkeCluster
     integration: gke
     source:
-      name: "sid-cluster"
+      name: "vivek-test"
       region: "us-east1-b"
 
  
