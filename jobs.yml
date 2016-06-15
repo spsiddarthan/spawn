@@ -5,7 +5,7 @@ jobs:
       - GET: dockimage-1111
       - GET: myReplicas-1111
       - GET: myParams-1111
-
+      - GET: dv-opts
 
   - name: fetch-cluster-job-1011
     type: gkeDeploy
