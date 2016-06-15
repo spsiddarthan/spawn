@@ -25,6 +25,6 @@ resources:
   - name: myReplicas
     type: replicas
     source: 
-      count: 3
+      count: 1
 
  
