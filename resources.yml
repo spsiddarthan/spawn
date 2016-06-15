@@ -11,8 +11,8 @@ resources:
     type: gkeCluster
     integration: gke
     source:
-      name: "sid-cluster"
-      region: "us-east1-b"
+      name: "sid-test-cluster-1"
+      region: "us-central1-b"
       
   - name: myReplicas
     type: replicas
