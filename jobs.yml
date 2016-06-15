@@ -4,6 +4,7 @@ jobs:
     steps:
       - GET: dockimage-11
       - GET: dockimage-12
+      - GET: myReplicas
 
 
   - name: fetch-cluster-job-101
