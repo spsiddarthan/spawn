@@ -26,5 +26,12 @@ resources:
     type: replicas
     source: 
       count: 1
+  
+  - name: myParams
+    type: params
+    source:
+      params:
+        foo: bar3
+        api_url: https://api.shippable.com    
 
  
