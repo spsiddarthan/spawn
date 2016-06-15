@@ -4,6 +4,7 @@ jobs:
     steps:
       - GET: dockimage-11
       - GET: myReplicas
+      - GET: myParams
 
 
   - name: fetch-cluster-job-101
@@ -12,4 +13,5 @@ jobs:
       - GET: fetch-image-job-100
       - GET: gke-cluster-11
       - GET: myReplicas
+      - GET: myParams
 
