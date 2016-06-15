@@ -17,7 +17,7 @@ resources:
   - name: myReplicas-1111
     type: replicas
     source: 
-      count: 1
+      count: 2
   
   - name: myParams-1111
     type: params
