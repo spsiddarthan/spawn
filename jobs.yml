@@ -1,17 +1,12 @@
 jobs:
-  - name: fetch-image-job-1011
+  - name: fetch-image-job-10111
     type: manifest
     steps:
-      - GET: dockimage-1111
-      - GET: myReplicas-1111
-      - GET: myParams-1111
-      - GET: dv-opts
+      - GET: dockimage-11111
 
-  - name: fetch-cluster-job-1011
+  - name: fetch-cluster-job-10111
     type: gkeDeploy
     steps:
-      - GET: fetch-image-job-1011
-      - GET: gke-cluster-1111
-      - GET: myReplicas-1111
-      - GET: myParams-1111
+      - GET: fetch-image-job-10111
+      - GET: gke-cluster-11111
 
