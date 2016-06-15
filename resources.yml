@@ -1,5 +1,5 @@
 resources:
-  - name: dockimage-111
+  - name: dockimage-1111
     type: image
     integration: docker-int 
     source:
@@ -7,14 +7,14 @@ resources:
       isPull: false
       tag: latest
 
-  - name: gke-cluster-111
+  - name: gke-cluster-1111
     type: gkeCluster
     integration: gke
     source:
       name: "sid-test-cluster-1"
       region: "us-central1-b"
       
-  - name: myReplicas
+  - name: myReplicas-111
     type: replicas
     source: 
       count: 1
