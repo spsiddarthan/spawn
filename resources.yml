@@ -1,21 +1,13 @@
 resources:
-  - name: dockimage-11
+  - name: dockimage-111
     type: image
     integration: docker-int 
     source:
       name: "nginx"
       isPull: false
       tag: latest
-      
-  - name: dockimage-12
-    type: image
-    integration: docker-int 
-    source:
-      name: "nginx"
-      isPull: false
-      tag: latest    
 
-  - name: gke-cluster-11
+  - name: gke-cluster-111
     type: gkeCluster
     integration: gke
     source:
@@ -27,7 +19,7 @@ resources:
     source: 
       count: 1
   
-  - name: myParams
+  - name: myParams-111
     type: params
     source:
       params:
