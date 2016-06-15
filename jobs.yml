@@ -3,7 +3,6 @@ jobs:
     type: manifest
     steps:
       - GET: dockimage-11
-      - GET: dockimage-12
       - GET: myReplicas
 
 
