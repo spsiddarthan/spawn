@@ -25,5 +25,13 @@ resources:
       params:
         foo: bar3
         api_url: https://api.shippable.com    
+        
+  - name: dv-opts
+    type: dockerOptions
+    source:
+      memory: 100
+      cpu-shares: 256
+      portMappings:
+        - 80:80      
 
  
