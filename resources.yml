@@ -1,5 +1,5 @@
 resources:
-  - name: dockimage-1111
+  - name: dockimage-11111
     type: image
     integration: docker-int 
     source:
@@ -7,31 +7,10 @@ resources:
       isPull: false
       tag: latest
 
-  - name: gke-cluster-1111
+  - name: gke-cluster-11111
     type: gkeCluster
     integration: gke
     source:
       name: "sid-test-cluster-1"
       region: "us-central1-b"
       
-  - name: myReplicas-1111
-    type: replicas
-    source: 
-      count: 2
-  
-  - name: myParams-1111
-    type: params
-    source:
-      params:
-        foo: bar3
-        api_url: https://api.shippable.com    
-        
-  - name: dv-opts
-    type: dockerOptions
-    source:
-      memory: 100
-      cpu-shares: 256
-      portMappings:
-        - 80:80      
-
- 
