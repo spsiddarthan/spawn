@@ -2,7 +2,7 @@ jobs:
   - name: fetch-image-job-for-beta
     type: manifest
     steps:
-      - GET:  dockimage
+      - GET: dockimage
       - GET: dev-replicas
 
   - name: fetch-dev-cluster-for-beta
