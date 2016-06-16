@@ -1,18 +1,18 @@
 jobs:
-  - name: fetch-image-job-for-beta
+  - name: fetch-image-job-for-beta-1
     type: manifest
     steps:
       - GET:  dockimage-for-double
 
-  - name: fetch-dev-cluster-for-beta
+  - name: fetch-dev-cluster-for-beta-1
     type: gkeDeploy
     steps:
-      - GET: fetch-image-job
-      - GET: gke-cluster-dev
+      - GET: fetch-image-job-for-beta-1
+      - GET: gke-cluster-dev-1
   
-  - name: fetch-prod-cluster-for-beta
+  - name: fetch-prod-cluster-for-beta-1
     type: gkeDeploy
     steps:
-      - GET: fetch-dev-cluster-for-beta
-      - GET: gke-cluster-prod         
+      - GET: fetch-dev-cluster-for-beta-1
+      - GET: gke-cluster-prod-1  
 
