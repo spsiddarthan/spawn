@@ -1,21 +1,21 @@
 jobs:
-  - name: fetch-image-job-for-beta-10000000
+  - name: job1001
     type: manifest
     steps:
-      - GET: dockimage-for-double-12
-      - GET: dev-replicas
-  
-  - name: fetch-image-job-for-beta-100000001
-    type: manifest
-    steps:
-      - GET: dockimage-for-double-13
-      - GET: dev-replicas    
+      - GET: dockimage-80976
+      - GET: dev-replicas-15
 
-  - name: fetch-dev-cluster-for-beta-101
+  - name: job1002
     type: gkeDeploy
     steps:
-      - GET: fetch-image-job-for-beta-10000000
-      - GET: fetch-image-job-for-beta-100000001
-      - GET: gke-cluster-prod-11
+      - GET: job1001
+      - GET: developer-cluster
+  
+  - name: job1003
+    type: gkeDeploy
+    steps:
+      - GET: job1002
+      - GET: production-cluster  
+      - GET: prod-replicas-15
   
  
