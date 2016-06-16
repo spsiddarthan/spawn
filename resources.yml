@@ -24,11 +24,11 @@ resources:
   - name: prod-replicas
     type: replicas
     source:
-      count: 2  
+      count: 4  
   
   - name: dev-replicas
     type: replicas
     source:
-      count: 1      
+      count: 2      
       
       
