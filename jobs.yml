@@ -14,5 +14,5 @@ jobs:
     type: gkeDeploy
     steps:
       - GET: fetch-dev-cluster
-      - GET: gke-cluster-dev          
+      - GET: gke-cluster-prod         
 
