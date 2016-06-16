@@ -1,5 +1,5 @@
 resources:
-  - name: dockimage-for-double
+  - name: dockimage-for-double-11
     type: image
     integration: docker-int 
     source:
@@ -7,17 +7,28 @@ resources:
       isPull: false
       tag: latest
 
-  - name: gke-cluster-dev
+  - name: gke-cluster-dev-11
     type: gkeCluster
     integration: gke
     source:
       name: "cluster-1"
       region: "us-central1-b"
 
-  - name: gke-cluster-prod
+  - name: gke-cluster-prod-11
     type: gkeCluster
     integration: gke
     source:
       name: "sid-test-cluster"
-      region: "us-central1-b"      
+      region: "us-central1-b" 
+  
+  - name: prod-replicas
+    type: replicas
+    source:
+      count: 2  
+  
+  - name: dev-replicas
+    type: replicas
+    source:
+      count: 1      
+      
       
