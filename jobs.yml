@@ -8,7 +8,7 @@ jobs:
   - name: fetch-dev-cluster-for-beta
     type: gkeDeploy
     steps:
-      - GET: fetch-image-job
+      - GET: fetch-image-job-for-beta
       - GET: gke-cluster-dev
   
   - name: fetch-prod-cluster-for-beta
