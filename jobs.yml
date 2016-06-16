@@ -16,4 +16,5 @@ jobs:
     type: gkeDeploy
     steps:
       - GET: fetch-cluster-job-101
+      - GET: dv-opts2
       - GET: gke-cluster-11

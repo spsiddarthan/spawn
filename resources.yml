@@ -6,6 +6,7 @@ resources:
       name: "siddarthan/centos-node-hello"
       isPull: false
       tag: latest
+
   - name: dv-opts
     type: dockerOptions
     source:
@@ -13,6 +14,14 @@ resources:
       cpu-shares: 256
       portMappings:
         - 80:80
+
+  - name: dv-opts2
+    type: dockerOptions
+    source:
+      memory: 94
+      cpu-shares: 94
+      portMappings:
+        - 88:88
         
   - name: dockimage-12
     type: image
