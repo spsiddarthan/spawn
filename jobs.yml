@@ -2,7 +2,7 @@ jobs:
   - name: fetch-image-job-for-beta-10000000
     type: manifest
     steps:
-      - GET: dockimage-for-double-11
+      - GET: dockimage-for-double-12
       - GET: dockimage-for-double-13
       - GET: dev-replicas
 
