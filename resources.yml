@@ -1,4 +1,5 @@
 resources:
+
   - name: dockimage
     type: image
     integration: docker-int 
@@ -7,26 +8,25 @@ resources:
       isPull: false
       tag: latest
 
-  - name: gke-cluster-dev
+  - name: developer-cluster
     type: gkeCluster
     integration: gke
     source:
       name: "cluster-1"
       region: "us-central1-b"
 
-  - name: gke-cluster-prod
-    type: gkeCluster
+  - name: production-cluster
     integration: gke
     source:
       name: "sid-test-cluster"
       region: "us-central1-b" 
   
-  - name: prod-replicas
+  - name: prod-replicas-15
     type: replicas
     source:
       count: 4  
   
-  - name: dev-replicas
+  - name: dev-replicas-15
     type: replicas
     source:
       count: 2      
