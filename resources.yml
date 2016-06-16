@@ -1,6 +1,6 @@
 resources:
 
-  - name: dockimage
+  - name: dockimage-80976
     type: image
     integration: docker-int 
     source:
