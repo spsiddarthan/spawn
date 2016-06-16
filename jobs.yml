@@ -15,7 +15,7 @@ jobs:
     type: gkeDeploy
     steps:
       - GET: fetch-dev-cluster-for-beta-101
-      - GET: gke-cluster-prod-11   
       - GET: prod-replicas
+      - GET: gke-cluster-prod-11   
 
 
