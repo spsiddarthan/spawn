@@ -1,28 +1,20 @@
 resources:
-  - name: dockimage-for-double-12
+  - name: dockimage
     type: image
     integration: docker-int 
     source:
       name: "nginx"
       isPull: false
       tag: latest
-  
-  - name: dockimage-for-double-13
-    type: image
-    integration: docker-int 
-    source:
-      name: "siddarthan/centos-node-hello"
-      isPull: false
-      tag: latest    
 
-  - name: gke-cluster-dev-11
+  - name: gke-cluster-dev
     type: gkeCluster
     integration: gke
     source:
       name: "cluster-1"
       region: "us-central1-b"
 
-  - name: gke-cluster-prod-11
+  - name: gke-cluster-prod
     type: gkeCluster
     integration: gke
     source:
