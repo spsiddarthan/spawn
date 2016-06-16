@@ -3,6 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: dockimage-for-double-11
+      - GET: dockimage-for-double-13
       - GET: dev-replicas
 
   - name: fetch-dev-cluster-for-beta-101
@@ -11,11 +12,4 @@ jobs:
       - GET: fetch-image-job-for-beta-10000000
       - GET: gke-cluster-dev-11
   
-  - name: fetch-prod-cluster-for-beta-1000000
-    type: gkeDeploy
-    steps:
-      - GET: fetch-dev-cluster-for-beta-101
-      - GET: prod-replicas
-      - GET: gke-cluster-prod-11   
-
-
+ 
