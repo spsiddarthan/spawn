@@ -1,5 +1,5 @@
 resources:
-  - name: dockimage
+  - name: dockimage-for-double
     type: image
     integration: docker-int 
     source:
