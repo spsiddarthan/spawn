@@ -14,7 +14,7 @@ jobs:
     steps:
       - GET: dockercon-1-siddarthan
       - GET: dockercon-2-siddarthan
-      - GET: aws-cluster-res 
+      - GET: aws-cluster-res-siddarthan
   
   
   - name: deploy-job-gke-siddarthan
