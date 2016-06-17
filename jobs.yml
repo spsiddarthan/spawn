@@ -1,17 +1,17 @@
 jobs:
-  - name: get-docker-image-1-for
+  - name: get-docker-image-1-for-beta
     type: manifest
     steps:
       - GET: docker-image-1-for
     
-  - name: get-docker-image-2-for
+  - name: get-docker-image-2-for-beta
     type: manifest
     steps:
      - GET: docker-image-2-for
 
-  - name: deploy-job-final
+  - name: deploy-job-final-for-beta
     type: gkeDeploy
     steps:
-      - GET: get-docker-image-1-for
-      - GET: get-docker-image-2-for
+      - GET: get-docker-image-1-for-beta
+      - GET: get-docker-image-2-for-beta
       - GET: my-gke-cluster-for-today
