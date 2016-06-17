@@ -14,5 +14,4 @@ jobs:
     type: gkeDeploy
     steps:
       - GET: fetch-image-job-100
-      - GET: fetch-image-job-101
       - GET: gke-cluster-11
