@@ -14,7 +14,7 @@ jobs:
   - name: deploy-to-gke-job-3-1
     type: gkeDeploy
     steps:
-      - GET: deploy-to-gke-job-2
+      - GET: deploy-to-gke-job-2-1
       - GET: your-production-cluster 
       - GET: no-of-prod-replicas
   
