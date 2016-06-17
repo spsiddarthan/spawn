@@ -1,23 +1,30 @@
 jobs:
-  - name: get-image-job-nginx-22223
+  - name: sidanifest-job
     type: manifest
     steps:
-      - GET: your-image-nginx-1
-      - GET: no-of-dev-replicas
-      - GET: mygkeParams1
-
-  - name: deploy-to-gke-job-dev-22223
-    type: gkeDeploy
-    steps:
-      - GET: get-image-job-nginx-22223
-      - GET: your-developer-cluster
+      - GET: sid-nginx-image
+      - GET: sid-no-of-dev-replicas
+      - GET: sid-mygkeParams1
   
-  - name: deploy-to-gke-job-prod-22223
+  - name: sianifest-job
+    type: manifest
+    steps:
+      - GET: sid-centos-image
+      - GET: sid-mygkeParams1    
+
+  - name: sid-dev-job
     type: gkeDeploy
     steps:
-      - GET:  deploy-to-gke-job-dev-22223
-      - GET: mygkeParams2
-      - GET: no-of-prod-replicas
-      - GET: your-production-cluster 
+      - GET: sidanifest-job
+      - GET: sianifest-job
+      - GET: siddarthan-developer-cluster
+  
+  - name: sid-prod-job
+    type: gkeDeploy
+    steps:
+      - GET: sid-dev-job
+      - GET: sid-mygkeParams2
+      - GET: sid-no-of-dev-replicas
+      - GET: siddarthan-production-cluster
   
  
