@@ -7,7 +7,7 @@ resources:
       isPull: false
       tag: latest
   
-  - name: newimage-sid-1
+  - name: newimage-sid-1-45
     type: image
     integration: docker-int 
     source:
@@ -15,7 +15,7 @@ resources:
       isPull: false
       tag: latest    
       
-  - name: gke-cluster-2-101
+  - name: gke-cluster-2-101-5
     type: gkeCluster
     integration: gke
     source:
