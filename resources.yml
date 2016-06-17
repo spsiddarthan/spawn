@@ -30,8 +30,7 @@ resources:
       name: "nginx"
       isPull: false
       tag: latest    
-  -
-    name: prod-replicas
+  - name: prod-replicas
     type: replicas
     source:
       count: 0
