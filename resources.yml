@@ -25,11 +25,11 @@ resources:
   - name: no-of-prod-replicas
     type: replicas
     source:
-      count: 4  
+      count: 2
   
   - name: no-of-dev-replicas
     type: replicas
     source:
-      count: 2      
+      count: 6 
       
       
