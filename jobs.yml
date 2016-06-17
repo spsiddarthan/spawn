@@ -1,20 +1,17 @@
 jobs:
-  - name: fetch-image-job-100
+  - name: get-docker-image-1-for
     type: manifest
     steps:
-      - GET: dockimage-11
-      - GET: dv-opts
-
-
-  - name: fetch-image-job-101
+      - GET: docker-image-1-for
+    
+  - name: get-docker-image-2-for
     type: manifest
     steps:
-      - GET: dockimage-12
-      - GET: dv-opts
+     - GET: docker-image-2-for
 
-  - name: fetch-cluster-job-101
+  - name: deploy-job-final
     type: gkeDeploy
     steps:
-      - GET: fetch-image-job-100
-      - GET: prod-replicas
-      - GET: gke-cluster-11
+      - GET: get-docker-image-1-for
+      - GET: get-docker-image-2-for
+      - GET: my-gke-cluster-for-today
