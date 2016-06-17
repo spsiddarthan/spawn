@@ -8,13 +8,6 @@ jobs:
     type: manifest
     steps:
      - GET: docker-image-2-for
-
-  - name: deploy-job-final-for-beta
-    type: ecsDeploy
-    steps:
-      - GET: get-docker-image-1-for-beta
-      - GET: get-docker-image-2-for-beta
-      - GET: aws-cluster-res
   
   - name: deploy-job-final-for-beta
     type: ecsDeploy
