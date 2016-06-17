@@ -35,6 +35,7 @@ resources:
     integration: gke
     source:
       name: "sid-beta-cluster"    
+      region: "us-central1-b
   
       
 
