@@ -1,6 +1,6 @@
 resources:
 
-  - name: dockimage-80976
+  - name: your-image-nginx-1
     type: image
     integration: docker-int 
     source:
@@ -8,25 +8,25 @@ resources:
       isPull: false
       tag: latest
 
-  - name: developer-cluster
+  - name: your-developer-cluster
     type: gkeCluster
     integration: gke
     source:
-      name: "cluster-1"
+      name: "sid-beta-cluster"
       region: "us-central1-b"
 
-  - name: production-cluster
+  - name: your-production-cluster
     integration: gke
     source:
       name: "sid-test-cluster"
       region: "us-central1-b" 
   
-  - name: prod-replicas-15
+  - name: no-of-prod-replicas
     type: replicas
     source:
       count: 4  
   
-  - name: dev-replicas-15
+  - name: no-of-dev-replicas
     type: replicas
     source:
       count: 2      
