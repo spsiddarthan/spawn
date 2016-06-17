@@ -1,10 +1,10 @@
 jobs:
-  - name: sidocker-image-1-job
+  - name: guitar-1
     type: manifest
     steps:
       - GET: sidocker-image-1
     
-  - name: sidocker-image-2-job
+  - name: guitar-2
     type: manifest
     steps:
      - GET: sidocker-image-2
@@ -12,7 +12,7 @@ jobs:
   - name: sidocker-dep
     type: ecsDeploy
     steps:
-      - GET: sidocker-image-1-job
-      - GET: sidocker-image-2-job
-      - GET: sidocker-cluster
+      - GET: guitar-1
+      - GET: guitar-2
+      - GET: guitar-cluster
   
