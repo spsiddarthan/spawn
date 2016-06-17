@@ -17,7 +17,7 @@ resources:
       
   - name: sidocker-cluster
     type: ecsCluster
-    integration: sid
+    integration: siddarthan
     source:
       name: "default"
       region: "us-west-2"
