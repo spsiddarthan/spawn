@@ -1,26 +1,21 @@
 resources:
-  - name: newimage-sid
+  - name: newimage-sid-2-101
     type: image
     integration: docker-int 
     source:
       name: "siddarthan/centos-node-hello"
       isPull: false
       tag: latest
-
-  - name: dv-opts-sid-1
-    type: dockerOptions
+  
+  - name: newimage-sid-1
+    type: image
+    integration: docker-int 
     source:
-      memory: 64
-      cpu-shares: 256
-      portMappings:
-        - "58:58"
-
-  - name: prod-replicas-sid-10
-    type: replicas
-    source:
-      count: 2
+      name: "nginx"
+      isPull: false
+      tag: latest    
       
-  - name: gke-cluster-110-sid
+  - name: gke-cluster-2-101
     type: gkeCluster
     integration: gke
     source:
