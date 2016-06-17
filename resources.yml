@@ -16,6 +16,7 @@ resources:
       region: "us-central1-b"
 
   - name: your-production-cluster
+    type: gkeCluster
     integration: gke
     source:
       name: "sid-test-cluster"
