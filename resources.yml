@@ -25,4 +25,4 @@ resources:
   - name: box-scaler
     type: replicas
     source:
-      count: 2   
+      count: 0
