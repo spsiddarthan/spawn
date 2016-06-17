@@ -1,20 +1,20 @@
 jobs:
-  - name: get-image-job-nginx-1
+  - name: get-image-job-nginx-111
     type: manifest
     steps:
       - GET: your-image-nginx-1
       - GET: no-of-dev-replicas
 
-  - name: deploy-to-gke-job-dev
+  - name: deploy-to-gke-job-dev-111
     type: gkeDeploy
     steps:
-      - GET: get-image-job-nginx-1
+      - GET: get-image-job-nginx-111
       - GET: your-developer-cluster
   
-  - name: deploy-to-gke-job-prod
+  - name: deploy-to-gke-job-prod-111
     type: gkeDeploy
     steps:
-      - GET:  deploy-to-gke-job-dev
+      - GET:  deploy-to-gke-job-dev-111
       - GET: no-of-prod-replicas
       - GET: your-production-cluster 
   
