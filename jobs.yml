@@ -10,7 +10,7 @@ jobs:
      - GET: docker-image-2-for
 
   - name: deploy-job-final-for-beta
-    type: gkeDeploy
+    type: ecsDeploy
     steps:
       - GET: get-docker-image-1-for-beta
       - GET: get-docker-image-2-for-beta
