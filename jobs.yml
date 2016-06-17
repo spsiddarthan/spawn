@@ -14,4 +14,4 @@ jobs:
     steps:
       - GET: get-docker-image-1-for-beta
       - GET: get-docker-image-2-for-beta
-      - GET: my-gke-cluster-for-today
+      - GET: aws-cluster-res
