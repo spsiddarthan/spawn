@@ -9,5 +9,5 @@ jobs:
   - name: image-job-2-deploy
     type: gkeDeploy
     steps:
-      - GET gke-cluster-110-sid
-      - GET cluster-res
+      - GET: gke-cluster-110-sid
+      - GET: cluster-res
