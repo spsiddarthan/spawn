@@ -15,3 +15,25 @@ jobs:
       - GET: get-docker-image-1-for-beta
       - GET: get-docker-image-2-for-beta
       - GET: aws-cluster-res
+  
+  - name: deploy-job-final-for-beta
+    type: ecsDeploy
+    steps:
+      - GET: get-docker-image-1-for-beta
+      - GET: get-docker-image-2-for-beta
+      - GET: aws-cluster-res 
+  
+  
+  - name: deploy-job-final-for-beta-2
+    type: gkeDeploy
+    steps:
+      - GET: get-docker-image-1-for-beta
+      - GET: get-docker-image-2-for-beta
+      - GET: gke-cluster-res  
+      
+  - name: deploy-job-final-for-beta-3
+    type: dclDeploy
+    steps:
+      - GET: get-docker-image-1-for-beta
+      - GET: get-docker-image-2-for-beta
+      - GET: dcl-cluster-res        
