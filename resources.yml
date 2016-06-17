@@ -17,7 +17,7 @@ resources:
       
   - name: aws-cluster-res-siddarthan
     type: ecsCluster
-    integration: siddarthan-aws
+    integration: sid
     source:
       name: "default"
       region: "us-west-2"
@@ -25,7 +25,7 @@ resources:
   
   - name: dcl-cluster-res-siddarthan
     type: dclCluster
-    integration: sid
+    integration: sid-beta
     source:
       name: "dcl-cluster"
   
