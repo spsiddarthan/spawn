@@ -1,5 +1,5 @@
 resources:
-  - name: dockimage-for-double-123
+  - name: dockimage-for-double-1234
     type: image
     integration: docker-int 
     source:
@@ -7,22 +7,23 @@ resources:
       isPull: false
       tag: latest
 
-  - name: gke-cup-cluster
+  - name: gke-cup-cluster-1
     type: gkeCluster
     integration: gke
     source:
       name: "sid-beta-cluster"
       region: "us-central1-b"
 
-  - name: dv-sidoptions
+  - name: dv-sidoptions-1
     type: dockerOptions
     source:
       memory: 64
       cpu-shares: 256
       portMappings:
         - "80:82"
+        - "81:83"
   
-  - name: box-scaler
+  - name: box-scaler-1
     type: replicas
     source:
       count: 0
