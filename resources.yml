@@ -25,11 +25,27 @@ resources:
   - name: no-of-prod-replicas
     type: replicas
     source:
-      count: 2
+      count: 1
   
   - name: no-of-dev-replicas
     type: replicas
     source:
-      count: 6 
+      count: 1
+      
+  
+  - name: mygkeParams1
+    type: params
+    source:
+      params:
+        foo: bar3
+        api_url: https://api.shippable.com  
+  
+  
+  - name: mygkeParams2
+    type: params
+    source:
+      params:
+        foo: bar4
+        api_url: https://api.shippable.com        
       
       
