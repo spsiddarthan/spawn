@@ -3,15 +3,9 @@ jobs:
     type: manifest
     steps:
       - GET: docker-image-1-for
-    
-  - name: get-docker-image-2-for
-    type: manifest
-    steps:
-     - GET: docker-image-2-for
 
   - name: deploy-job-final
     type: gkeDeploy
     steps:
       - GET: get-docker-image-1-for
-      - GET: get-docker-image-2-for
       - GET: my-gke-cluster-for-today
