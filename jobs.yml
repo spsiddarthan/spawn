@@ -3,8 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: dockimage-for-double-1234
-      - GET: dev-replicas-1
-      - GET: box-scaler-1
+      - GET: dv-sidoptions-1
 
   - name: fetch-dev-cluster-for-beta-1
     type: gkeDeploy
