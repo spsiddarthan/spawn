@@ -5,13 +5,13 @@ jobs:
       - GET: your-image-nginx-1
       - GET: no-of-dev-replicas
 
-  - name: deploy-to-gke-job-2-1
+  - name: deploy-to-gke-job-dev
     type: gkeDeploy
     steps:
       - GET: get-image-job-nginx-1
       - GET: your-developer-cluster
   
-  - name: deploy-to-gke-job-3-1
+  - name: deploy-to-gke-job-prod
     type: gkeDeploy
     steps:
       - GET: deploy-to-gke-job-2-1
