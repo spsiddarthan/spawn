@@ -1,32 +1,32 @@
 jobs:
-  - name: dockercon-1
+  - name: dockercon-1-siddarthan
     type: manifest
     steps:
-      - GET: docker-image-1-for
+      - GET: docker-image-1-for-siddarthan
     
-  - name: dockercon-2
+  - name: dockercon-2-siddarthan
     type: manifest
     steps:
-     - GET: docker-image-2-for
+     - GET: docker-image-2-for-siddarthan
   
-  - name: deploy-job-ecs
+  - name: deploy-job-ecs-siddarthan
     type: ecsDeploy
     steps:
-      - GET: dockercon-1
-      - GET: dockercon-2
+      - GET: dockercon-1-siddarthan
+      - GET: dockercon-2-siddarthan
       - GET: aws-cluster-res 
   
   
-  - name: deploy-job-gke
+  - name: deploy-job-gke-siddarthan
     type: gkeDeploy
     steps:
-      - GET: dockercon-1
-      - GET: dockercon-2
-      - GET: gke-cluster-res  
+      - GET: dockercon-1-siddarthan
+      - GET: dockercon-2-siddarthan
+      - GET: gke-cluster-res-siddarthan
       
-  - name: deploy-job-dcl
+  - name: deploy-job-dcl-siddarthan
     type: dclDeploy
     steps:
-      - GET: dockercon-1
-      - GET: dockercon-2
-      - GET: dcl-cluster-res        
+      - GET: dockercon-1-siddarthan
+      - GET: dockercon-2-siddarthan
+      - GET: dcl-cluster-res-siddarthan    
