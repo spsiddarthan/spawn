@@ -9,7 +9,7 @@ jobs:
     steps:
      - GET: guitar-ng
   
-  - name: sidocker-dep
+  - name: guitr-dep
     type: ecsDeploy
     steps:
       - GET: guitar-1
