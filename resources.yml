@@ -22,6 +22,20 @@ resources:
       name: "default"
       region: "us-west-2"
   
+  
+  - name: dcl-cluster-res
+    type: dclCluster
+    integration: sid
+    source:
+      name: "dcl-cluster"
+  
+  
+  - name: gke-cluster-res
+    type: gkeCluster
+    integration: gke
+    source:
+      name: "sid-beta-cluster"    
+  
       
 
  
