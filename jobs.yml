@@ -1,32 +1,32 @@
 jobs:
-  - name: get-docker-image-1-for-beta
+  - name: dockercon-1
     type: manifest
     steps:
       - GET: docker-image-1-for
     
-  - name: get-docker-image-2-for-beta
+  - name: dockercon-2
     type: manifest
     steps:
      - GET: docker-image-2-for
   
-  - name: deploy-job-final-for-beta
+  - name: deploy-job-ecs
     type: ecsDeploy
     steps:
-      - GET: get-docker-image-1-for-beta
-      - GET: get-docker-image-2-for-beta
+      - GET: dockercon-1
+      - GET: dockercon-2
       - GET: aws-cluster-res 
   
   
-  - name: deploy-job-final-for-beta-2
+  - name: deploy-job-gke
     type: gkeDeploy
     steps:
-      - GET: get-docker-image-1-for-beta
-      - GET: get-docker-image-2-for-beta
+      - GET: dockercon-1
+      - GET: dockercon-2
       - GET: gke-cluster-res  
       
-  - name: deploy-job-final-for-beta-3
+  - name: deploy-job-dcl
     type: dclDeploy
     steps:
-      - GET: get-docker-image-1-for-beta
-      - GET: get-docker-image-2-for-beta
+      - GET: dockercon-1
+      - GET: dockercon-2
       - GET: dcl-cluster-res        
