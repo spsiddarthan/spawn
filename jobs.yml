@@ -2,9 +2,9 @@ jobs:
   - name: guitar-1
     type: manifest
     steps:
-      - GET: sidocker-image-1
+      - GET: guitar-cent
     
-  - name: guitar-2
+  - name: guitar-ng
     type: manifest
     steps:
      - GET: sidocker-image-2
