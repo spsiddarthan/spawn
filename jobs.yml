@@ -1,21 +1,21 @@
 jobs:
-  - name: job1001
+  - name: get-image-job-nginx
     type: manifest
     steps:
-      - GET: dockimage-80976
-      - GET: dev-replicas-15
+      - GET: your-image-nginx-1
+      - GET: no-of-dev-replicas
 
-  - name: job1002
+  - name: deploy-to-gke-job-2
     type: gkeDeploy
     steps:
-      - GET: job1001
-      - GET: developer-cluster
+      - GET: get-image-job-nginx
+      - GET: your-developer-cluster
   
-  - name: job1003
+  - name: deploy-to-gke-job-3
     type: gkeDeploy
     steps:
-      - GET: job1002
-      - GET: production-cluster  
-      - GET: prod-replicas-15
+      - GET: deploy-to-gke-job-2
+      - GET: your-production-cluster 
+      - GET: no-of-prod-replicas
   
  
