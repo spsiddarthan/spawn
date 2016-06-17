@@ -8,14 +8,14 @@ jobs:
   - name: deploy-to-gke-job-2-1
     type: gkeDeploy
     steps:
-      - GET: get-image-job-nginx
+      - GET: get-image-job-nginx-1
       - GET: your-developer-cluster
   
   - name: deploy-to-gke-job-3-1
     type: gkeDeploy
     steps:
       - GET: deploy-to-gke-job-2-1
-      - GET: your-production-cluster 
       - GET: no-of-prod-replicas
+      - GET: your-production-cluster 
   
  
