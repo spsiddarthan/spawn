@@ -1,33 +1,41 @@
 resources:
 
-  - name: your-image-nginx-1
+  - name: sid-nginx-image
     type: image
     integration: docker-int 
     source:
       name: "nginx"
       isPull: false
       tag: latest
+  
+  - name: sid-centos-image
+    type: image
+    integration: docker-int 
+    source:
+      name: "siddarthan/centos-node-hello"
+      isPull: false
+      tag: latest    
 
-  - name: your-developer-cluster
+  - name: siddarthan-developer-cluster
     type: gkeCluster
     integration: gke
     source:
       name: "sid-beta-cluster"
       region: "us-central1-b"
 
-  - name: your-production-cluster
+  - name: siddarthan-production-cluster
     type: gkeCluster
     integration: gke
     source:
       name: "sid-test-cluster"
       region: "us-central1-b" 
   
-  - name: no-of-prod-replicas
+  - name: sid-no-of-prod-replicas
     type: replicas
     source:
       count: 1
   
-  - name: no-of-dev-replicas
+  - name: sid-no-of-dev-replicas
     type: replicas
     source:
       count: 1
