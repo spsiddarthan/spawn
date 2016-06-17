@@ -30,7 +30,12 @@ resources:
       name: "nginx"
       isPull: false
       tag: latest    
-
+  -
+    name: prod-replicas
+    type: replicas
+    source:
+      count: 0
+      
   - name: gke-cluster-11
     type: gkeCluster
     integration: gke
