@@ -15,11 +15,13 @@ resources:
       isPull: false
       tag: latest    
       
-  - name: my-gke-cluster-for-today
-    type: gkeCluster
-    integration: gke
+  - name: aws-cluster-res
+    type: ecsCluster
+    integration: siddarthan-aws
     source:
-      name: "sid-test-cluster"
-      region: "us-central1-b"
+      name: "default"
+      region: "us-west-2"
+  
+      
 
  
