@@ -21,6 +21,6 @@ resources:
       memory: 64
       cpu-shares: 256
       portMappings:
-        - 80:50
+        - "80:50"
     
  
