@@ -1,17 +1,30 @@
 resources:
-  - name: image-res
+  - name: newimage-sid
     type: image
     integration: docker-int 
     source:
-      name: "yeasy/simple-web"
+      name: "siddarthan/centos-node-hello"
       isPull: false
       tag: latest
 
-  - name: cluster-res
-    type: ecsCluster
-    integration: siddarthan
+  - name: dv-opts-sid-1
+    type: dockerOptions
     source:
-      name : "default"
-      region: "us-west-2"
+      memory: 64
+      cpu-shares: 256
+      portMappings:
+        - "58:58"
+
+  - name: prod-replicas-sid-10
+    type: replicas
+    source:
+      count: 2
+      
+  - name: gke-cluster-110-sid
+    type: gkeCluster
+    integration: gke
+    source:
+      name: "sid-beta-cluster"
+      region: "us-central1-b"
 
  
