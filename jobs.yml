@@ -4,15 +4,15 @@ jobs:
     steps:
       - GET: guitar-cent
     
-  - name: guitar-ng
+  - name: guitar-ng-1
     type: manifest
     steps:
-     - GET: sidocker-image-2
+     - GET: guitar-ng
   
   - name: sidocker-dep
     type: ecsDeploy
     steps:
       - GET: guitar-1
-      - GET: guitar-2
+      - GET: guitar-ng-1
       - GET: guitar-cluster
   
