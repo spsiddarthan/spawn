@@ -12,5 +12,6 @@ jobs:
   - name: gke-cluster-2-101-5-job
     type: gkeDeploy
     steps:
+      - GET: newimage-sid-2-101
+      - GET: newimage-sid-1-45   
       - GET: gke-cluster-2-101-5
-      - GET: cluster-res
