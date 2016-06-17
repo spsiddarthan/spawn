@@ -3,12 +3,14 @@ jobs:
     type: manifest
     steps:
       - GET: dockimage-11
+      - GET: dv-opts
 
 
   - name: fetch-image-job-101
     type: manifest
     steps:
       - GET: dockimage-12
+      - GET: dv-opts
 
   - name: fetch-cluster-job-101
     type: gkeDeploy
