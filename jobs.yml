@@ -1,13 +1,16 @@
 jobs:
-  - name: newimage-sid-job-1
+  - name: newimage-sid-job-1-12
     type: manifest
     steps:
-      - GET: newimage-sid
-      - GET: prod-replicas-sid-10
-      - GET: dv-opts-sid-1
+      - GET: newimage-sid-2-101
+  
+  - name: newimage-sid-1-45-1-12
+    type: manifest
+    steps:
+      - GET: newimage-sid-1-45   
 
-  - name: image-job-2-deploy
+  - name: gke-cluster-2-101-5-job
     type: gkeDeploy
     steps:
-      - GET: gke-cluster-110-sid
+      - GET: gke-cluster-2-101-5
       - GET: cluster-res
