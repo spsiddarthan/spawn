@@ -1,5 +1,5 @@
 resources:
-  - name: docker-image-1-for-siddarthan-basic
+  - name: docker-image-1-for-siddarthan-basic-1
     type: image
     integration: docker-int 
     source:
@@ -7,7 +7,7 @@ resources:
       isPull: false
       tag: latest
       
-  - name: gke-cluster-res-siddarthan-1-basic
+  - name: gke-cluster-res-siddarthan-1-basic-1
     type: gkeCluster
     integration: gke
     source:
