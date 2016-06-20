@@ -1,5 +1,5 @@
 resources:
-  - name: docker-image-1-for-siddarthan-1
+  - name: docker-image-1-for-siddarthan-basic
     type: image
     integration: docker-int 
     source:
@@ -7,33 +7,10 @@ resources:
       isPull: false
       tag: latest
       
-  - name: docker-image-2-for-siddarthan-1
-    type: image
-    integration: docker-int 
-    source:
-      name: "nginx"
-      isPull: false
-      tag: latest    
-      
-  - name: aws-cluster-res-siddarthan-1
-    type: ecsCluster
-    integration: sid
-    source:
-      name: "default"
-      region: "us-west-2"
-  
-  
-  - name: dcl-cluster-res-siddarthan-1
-    type: dclCluster
-    integration: sid-beta
-    source:
-      name: "dcl-cluster"
-  
-  
-  - name: gke-cluster-res-siddarthan-1
+  - name: gke-cluster-res-siddarthan-1-basic
     type: gkeCluster
     integration: gke
     source:
-      name: "sid-beta-cluster"    
+      name: "cluster-2-vidya"    
       region: "us-central1-b"
   
