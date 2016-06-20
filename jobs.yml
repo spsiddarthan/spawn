@@ -2,10 +2,10 @@ jobs:
   - name: dockercon-1-siddarthan-1-1job-1
     type: manifest
     steps:
-      - GET: docker-image-1-for-siddarthan-basic
+      - GET: docker-image-1-for-siddarthan-basic-1
       
   - name: deploy-job-gke-siddarthan-1job
     type: gkeDeploy
     steps:
       - GET: dockercon-1-siddarthan-1-1job-1
-      - GET:  gke-cluster-res-siddarthan-1-basic
+      - GET:  gke-cluster-res-siddarthan-1-basic-1
