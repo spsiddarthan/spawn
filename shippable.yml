@@ -8,5 +8,5 @@ python:
 build:
   ci:
     - python --version
-    - echo COMMIT_MESSAGE
-    - echo COMMITTER
+    - echo $COMMIT_MESSAGE
+    - echo $COMMITTER
