@@ -10,4 +10,4 @@ build:
     - python --version
     - echo $COMMIT_MESSAGE
     - echo $COMMITTER
-    - echo $SUBSCRIPTION_ID
+    - echo $LAST_AUTHOR
