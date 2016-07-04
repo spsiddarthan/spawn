@@ -1,5 +1,5 @@
 resources:
-  - name: newimage-sid-2-101
+  - name: newimage-sid-2-1011
     type: image
     integration: docker-int 
     source:
