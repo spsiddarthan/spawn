@@ -1,5 +1,5 @@
 jobs:
-  - name: newimage-sid-job-1-12
+  - name: newimage-sid-job-1-121
     type: manifest
     steps:
-      - GET: newimage-sid-2-101
+      - GET: newimage-sid-2-1011
