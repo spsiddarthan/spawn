@@ -6,20 +6,4 @@ resources:
       name: "siddarthan/centos-node-hello"
       isPull: false
       tag: latest
-  
-  - name: newimage-sid-1-45
-    type: image
-    integration: docker-int 
-    source:
-      name: "nginx"
-      isPull: false
-      tag: latest    
-      
-  - name: gke-cluster-2-101-5
-    type: gkeCluster
-    integration: gke
-    source:
-      name: "sid-beta-cluster"
-      region: "us-central1-b"
-
  
