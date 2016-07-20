@@ -10,5 +10,4 @@ build:
     - python --version
     - echo $COMMIT_MESSAGE
     - echo $COMMITTER
-    - echo $LAST_AUTHOR
 
