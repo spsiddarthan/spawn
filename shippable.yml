@@ -1,13 +1,31 @@
-# Language setting
+
 language: python
 
-# Version number
+
 python:
-  - 2.7
+  - 3.4
+ # - 2.7
+
+
 
 build:
-  ci:
-    - python --version
-    - echo $COMMIT_MESSAGE
-    - echo $COMMITTER
+  
+  
 
+  ci:
+    - ps -eax
+    - ls -al
+    
+integrations:
+  
+  notifications:
+    - integrationName: email
+      type: email
+      recipients: 
+        - siddarthan@outlook.com
+
+      on_pull_request: always
+      on_start: always
+      on_success: always
+      on_failure: always
+      
