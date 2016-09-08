@@ -1,31 +1,18 @@
-
-language: python
-
-
-python:
-  - 3.4
- # - 2.7
-
-
+language: node_js
+services:
+  - mysql
+  - postgres
+  - redis
+  - memcache
+  - elasticsearch
+  - mongodb
+  - rabbitmq
+  - neo4j
+  - couchdb
+  - rethinkdb
 
 build:
-  
-  
-
   ci:
     - ps -eax
     - ls -al
     
-integrations:
-  
-  notifications:
-    - integrationName: email
-      type: email
-      recipients: 
-        - siddarthan@outlook.com
-
-      on_pull_request: always
-      on_start: always
-      on_success: always
-      on_failure: always
-      
