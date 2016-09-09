@@ -1,13 +1,13 @@
-language: java
+language: nodejs
 services:
   - postgres
   
 build:
 
   pre_ci_boot:
-    image_name: drydock/u14nodpls
+    image_name: siddarthan/u14nodpls
    # image_name: shippable/minv2
-    image_tag: prod
+    image_tag: latest
     pull: true
     
   ci:
