@@ -14,7 +14,7 @@ services:
 build:
 
   pre_ci_boot:
-    image_name: drydock/u14javpls:prod
+    image_name: drydock/u14javpls
    # image_name: shippable/minv2
     image_tag: latest
     pull: true
