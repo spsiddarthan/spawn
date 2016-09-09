@@ -1,20 +1,11 @@
 language: java
 services:
-  - mysql
   - postgres
-  - redis
-  - memcache
-  - elasticsearch
-  - mongodb
-  - rabbitmq
-  - neo4j
-  - couchdb
-  - rethinkdb
-
+  
 build:
 
   pre_ci_boot:
-    image_name: drydock/u14javpls
+    image_name: drydock/u14nodpls
    # image_name: shippable/minv2
     image_tag: prod
     pull: true
