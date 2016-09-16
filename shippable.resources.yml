@@ -1,9 +1,11 @@
 resources:
-  - name: newimage-sid-2-101
-    type: image
-    integration: docker-int 
-    source:
-      name: "siddarthan/centos-node-hello"
-      isPull: false
-      tag: latest
+ 
+   - name: dv-img
+     type: image
+     integration: shipdeploy
+     pointer:
+       sourceName: "siddarthan/centos-node-hello"
+       isPull: false
+     #make sure this seed version exists in your registry account
+     seed: master.2
  
