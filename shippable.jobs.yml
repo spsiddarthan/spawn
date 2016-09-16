@@ -1,5 +1,6 @@
 jobs:
-  - name: newimage-sid-job-1-12
-    type: manifest
-    steps:
-      - GET: newimage-sid-2-101
+  - name: foo-app-ci
+    type: jenkinsJob
+    integration: "sadsas"
+    pointer:
+      sourceName: "testJob"  # This is the job name on Jenk
