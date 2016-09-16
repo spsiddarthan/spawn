@@ -2,12 +2,10 @@ language: node_js
 services:
   - postgres
   
-  
 build:
 
   pre_ci_boot:
     image_name: siddarthan/u14nodpls
-   # image_name: shippable/minv2
     image_tag: latest
     pull: true
     
