@@ -3,4 +3,4 @@ jobs:
     type: jenkinsJob
     integration: "sadsas"
     pointer:
-      sourceName: "testJob"  # This is the job name on Jenk
+      sourceName: "testjob"  # This is the job name on Jenk
