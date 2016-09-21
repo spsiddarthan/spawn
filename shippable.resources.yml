@@ -1,5 +1,5 @@
 resources:
-  - name: sh-myapp2
+  - name: img-foo-app
     type: image
     integration: shipdeploy
     pointer:
