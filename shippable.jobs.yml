@@ -4,4 +4,5 @@ jobs:
     integration: "sadsas"
     pointer:
       sourceName: "testJob"  # This is the job name on Jenk
-    OUT: sh-myapp2  
+    steps:
+       - OUT: "sh-myapp2"
