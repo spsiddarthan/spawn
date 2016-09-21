@@ -4,3 +4,5 @@ jobs:
     integration: "sadsas"
     pointer:
       sourceName: "testjob"  # This is the job name on Jenk
+    steps:
+      - OUT: "img-foo-app"  
