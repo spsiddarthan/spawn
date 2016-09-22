@@ -5,4 +5,4 @@ jobs:
     pointer:
       sourceName: "testJob"  # This is the job name on Jenk
     steps:
-       - OUT: sh-myapp2
+       - OUT: "sh-myapp2"
