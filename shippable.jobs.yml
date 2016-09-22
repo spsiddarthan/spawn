@@ -5,4 +5,4 @@ jobs:
     pointer:
       sourceName: "siddarthan-job"  # This is the job name on Jenk
     steps:
-      OUT: "img-docker"
+      - OUT: "img-docker"
