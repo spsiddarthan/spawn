@@ -1,10 +1,13 @@
 resources:
-  - name: sh-myapp2
+
+  - name: img-docker
     type: image
-    integration: shipdeploy
+    integration: "shipdeploy"
     pointer:
-      sourceName: "scriptnull/debian"
-      isPull: true
+      sourceName: "chaitanyavootla/chaitanya"
+      isPull: false
+    #make sure this seed version exists in your registry account
     seed:
-      versionName: "entrypoint"
+      versionName: master.1
+
  
