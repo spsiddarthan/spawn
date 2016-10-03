@@ -1,7 +1,7 @@
 jobs:
   - name: foo-app-ci
     type: jenkinsJob
-    integration: "sadsas"
+    integration: "jenkins"
     pointer:
       sourceName: "siddarthan-job"  # This is the job name on Jenk
     steps:
